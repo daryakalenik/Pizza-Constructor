@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2b2b2b;
+}
+
+#currentOrder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 500px;
+}
+
+#currentOrderPriceComp {
+  background: #ffe4c4;
+  width: 50%;
+  position: relative;
+}
+
+.active {
+  font-weight: bold;
+  color: #f08080;
+  opacity: 0;
+  animation: ani 0.5s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#currentOrderPriceComp > h2 {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+}
+
+#currentIngredients > p {
+  margin-bottom: 10px;
+}
+
+#currentIngredients {
+  position: relative;
+  top: 15%;
+  left: 5%;
+}
+
+#price {
+  position: absolute;
+  top: 85%;
+  left: 5%;
+}
+
+#currentOrderImg {
+  display: flex;
+  flex-direction: column;
+  background: #ffebcd;
+  width: 50%;
+}
+
+#currentOrderImg > img {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#userOrderButton {
+  margin: 0 auto;
+  margin-top: 105px;
+  width: 200px;
+  height: 50px;
+  background-color: #ffffe0;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+}
+
+#userOrderButton:hover {
+  color: #ffffe0;
+  background-color: #2b2b2b;
+  transition: ease 0.4s;
+}
+
+#userOrderButton:disabled {
+  color: #d3d3d3;
+}
+
+#composition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 250px;
+  background-color: #ffdead;
+}
+
+#composition > div {
+  margin-top: 50px;
+}
+
+#composition > div > h3 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+
+#composition > div > p {
+  font-size: 17px;
+  margin-top: 5px;
+}

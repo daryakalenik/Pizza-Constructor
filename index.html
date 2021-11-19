@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="currentOrder">
+      <div id="currentOrderPriceComp">
+        <h2>Область просмотра заказа</h2>
+        <div id="currentIngredients"></div>
+        <p id="price">Цена: <span id="priceSpan">0$</span></p>
+      </div>
+      <div id="currentOrderImg">
+        <img src="#" alt="pizza" id="pizzaImg" />
+        <button id="userOrderButton">ЗАКАЗАТЬ</button>
+      </div>
+    </div>
+    <div id="composition">
+      <div id="basis">
+        <h3>Основа</h3>
+        <p id="tomatoBase" class="basisVar">Томатная</p>
+        <p id="cheeseBase" class="basisVar">Сырная</p>
+        <p id="garlicBase" class="basisVar">Чесночная</p>
+        <p id="bbqBase" class="basisVar">Барбекю</p>
+      </div>
+      <div id="firstIngredient">
+        <h3>Первый ингредиент</h3>
+        <p id="chicken" class="firstIngVar">Цыпленок</p>
+        <p id="pepperoni" class="firstIngVar">Пепперони</p>
+        <p id="ham" class="firstIngVar">Ветчина</p>
+        <p id="beef" class="firstIngVar">Говядина</p>
+      </div>
+      <div id="secondIngredient">
+        <h3>Второй ингредиент</h3>
+        <p id="bellPepper" class="secondIngVar">Сладкий перец</p>
+        <p id="pineapple" class="secondIngVar">Ананасы</p>
+        <p id="fetaCheese" class="secondIngVar">Брынза</p>
+        <p id="mushrooms" class="secondIngVar">Шампиньоны</p>
+      </div>
+      <div id="sauce">
+        <h3>Соус</h3>
+        <p id="sweetAndSourSauce" class="sauceVar">Кисло-сладкий</p>
+        <p id="teriyaki" class="sauceVar">Терияки</p>
+        <p id="mustard" class="sauceVar">Горчичный</p>
+        <p id="thousandIslands" class="sauceVar">1000 островов</p>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
